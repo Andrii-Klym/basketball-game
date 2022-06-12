@@ -1,0 +1,140 @@
+/* START: Task 1 Styles */
+#task1 {
+    display: flex;
+    justify-content: center;
+}
+
+td{ 
+    text-align: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color:blue;
+}
+
+.green {
+    background-color: green;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+#task2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#task2 td {
+    text-align: start;
+    border: 1px solid black;
+    height: 70px;
+    width: 320px;
+}
+
+.coral {
+    background-color: #ff8080;
+    color: white;
+}
+
+.grass {
+    background-color: #008000;
+    color: white;
+}
+
+input {
+    height: 30px;
+    width: 270px;
+    margin: 5px;
+    font-size:xx-small;
+}
+
+button {
+    height: 40px;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+#task3 {
+    display: flex;
+    background-image: url(/assets/court.png);
+    background-size: 600px 330px;
+    height: 330px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#ball {
+    position: absolute;
+    right: 280px;
+    top: 145px;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+}
+
+.rotateAnimation{
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.bucketSize {
+    height: 15px;
+    width: 15px;
+}
+
+.bucketRight {
+    position: absolute;
+    right: 33px;
+    top: 156px;
+}
+
+.bucketLeft {
+    position: absolute;
+    left: 31px;
+    top: 156px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.scoreStat {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.redB {
+    color: red;
+}
+
+.blueA {
+    color: blue;
+}
+/* END: Task 3 Styles */
